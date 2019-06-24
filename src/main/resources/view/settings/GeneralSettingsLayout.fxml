@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<AnchorPane prefHeight="500.0" prefWidth="400.0" styleClass="background" stylesheets="@../AppTheme.css" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ui.settings.GeneralSettingsController">
+   <children>
+      <GridPane layoutX="14.0" layoutY="19.0" prefHeight="405.0" prefWidth="360.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="20.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="246.0" minWidth="10.0" prefWidth="186.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="198.0" minWidth="0.0" prefWidth="174.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <Label text="Width Led Count" />
+            <Label text="Height Led Count" GridPane.rowIndex="1" />
+            <Label text="Frame Type" GridPane.rowIndex="2" />
+            <Label text="Start Position" GridPane.rowIndex="3" />
+            <Label text="Strip Direction" GridPane.rowIndex="4" />
+            <Label text="Serial Port" GridPane.rowIndex="5" />
+            <TextField fx:id="widthLedCountField" prefWidth="94.0" GridPane.columnIndex="1" />
+            <TextField fx:id="heightLedCountField" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <ChoiceBox fx:id="frameConstructionTypeChoiceBox" prefHeight="41.0" prefWidth="174.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <tooltip>
+                  <Tooltip text="Specify the frame architecture." />
+               </tooltip></ChoiceBox>
+            <ChoiceBox fx:id="frameStartPositionChoiceBox" prefHeight="25.0" prefWidth="187.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
+               <tooltip>
+                  <Tooltip text="Specify the screen corner where the first LED of the strip is placed." />
+               </tooltip></ChoiceBox>
+            <ChoiceBox fx:id="frameDirectionChoiceBox" prefHeight="25.0" prefWidth="188.0" GridPane.columnIndex="1" GridPane.rowIndex="4">
+               <tooltip>
+                  <Tooltip text="Specify the direction of the strip. Check the arrows between LEDs." />
+               </tooltip></ChoiceBox>
+            <ChoiceBox fx:id="serialPortChoiceBox" prefHeight="25.0" prefWidth="189.0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <Label text="Strip RGB Order" GridPane.rowIndex="6" />
+            <ChoiceBox fx:id="stripRgbOrderChoiceBox" prefHeight="45.0" prefWidth="200.0" stylesheets="@../AppTheme.css" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+         </children>
+      </GridPane>
+      <ButtonBar layoutX="20.0" layoutY="419.0" prefHeight="40.0" prefWidth="341.0" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="39.0">
+         <buttons>
+            <Button mnemonicParsing="false" onAction="#handleOk" prefHeight="25.0" prefWidth="153.0" stylesheets="@../AppTheme.css" text="Ok" />
+            <Button layoutX="135.0" layoutY="18.0" mnemonicParsing="false" onAction="#handleCancel" prefHeight="25.0" text="Cancel" />
+            <Button layoutX="135.0" layoutY="18.0" mnemonicParsing="false" onAction="#handleApply" prefHeight="25.0" text="Apply" />
+         </buttons>
+      </ButtonBar>
+   </children>
+</AnchorPane>

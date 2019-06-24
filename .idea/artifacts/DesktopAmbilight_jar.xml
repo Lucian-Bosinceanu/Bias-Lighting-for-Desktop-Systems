@@ -1,0 +1,11 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="DesktopAmbilight:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/DesktopAmbilight_jar</output-path>
+    <root id="archive" name="DesktopAmbilight.jar">
+      <element id="module-output" name="DesktopAmbilight" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/scream3r/jssc/2.8.0/jssc-2.8.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/com/github/axet/TarsosDSP/2.4-1/TarsosDSP-2.4-1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/com/google/code/gson/gson/2.8.5/gson-2.8.5.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>

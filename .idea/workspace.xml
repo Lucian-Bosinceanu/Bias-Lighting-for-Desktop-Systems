@@ -1,0 +1,1443 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="DesktopAmbilight:jar" />
+    </artifacts-to-build>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="61c14127-d0da-4059-972f-a6dd288fde77" name="Default" comment="Code refactoring">
+      <change afterPath="$PROJECT_DIR$/src/main/java/controller/algorithms/processing_algorithms/video/processors/_pro/LogarithmicProcessingAlgorithm.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/controller/algorithms/processing_algorithms/video/processors/_pro/UniformProcessingAlgorithm.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/controller/algorithms/processing_algorithms/video/processors/post/frame_update/GradientFrameUpdatePostProcessingAlgorithm.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/controller/algorithms/processing_algorithms/video/processors/post/frame_update/LazyFrameUpdatePostProcessingAlgorithm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/Desktop_Ambilight_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/MainApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/MainApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/exceptions/InvalidImageSource.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/exceptions/MyException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/exceptions/MyException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/frame/functionalities/ambient/AmbientProcessingUnit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/processing_units/units/AmbientProcessingUnit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/frame/functionalities/ambient/StaticFrameColorState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/FrameColorPreset.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/frame/functionalities/ambient/processors/__pre/AmbientPreProcessingAlgorithm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/algorithms/processing_algorithms/ambient/processors/__pre/AmbientPreProcessingAlgorithm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/frame/functionalities/ambient/processors/__pre/AmbientShufflePresetsPreProcessingAlgorithm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/algorithms/processing_algorithms/ambient/processors/__pre/AmbientShufflePresetsPreProcessingAlgorithm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/frame/functionalities/ambient/processors/_pro/AmbientProcessingAlgorithm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/algorithms/processing_algorithms/ambient/processors/_pro/AmbientProcessingAlgorithm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/frame/functionalities/ambient/processors/_pro/FadeAnimationProcessingAlgorithm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/algorithms/processing_algorithms/ambient/processors/_pro/FadeAnimationProcessingAlgorithm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/frame/functionalities/ambient/processors/_pro/InterpolateAnimationProcessingAlgorithm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/algorithms/processing_algorithms/ambient/processors/_pro/InterpolateAnimationProcessingAlgorithm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/frame/functionalities/ambient/processors/_pro/SpinAnimationProcessingAlgorithm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/algorithms/processing_algorithms/ambient/processors/_pro/SpinAnimationProcessingAlgorithm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/frame/functionalities/ambient/processors/post/AmbientPostProcessingAlgorithm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/algorithms/processing_algorithms/ambient/processors/post/AmbientPostProcessingAlgorithm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/frame/functionalities/audio/AudioProcessingUnit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/processing_units/units/AudioProcessingUnit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/frame/functionalities/audio/processors/__pre/AudioPreProcessingAlgorithm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/algorithms/processing_algorithms/audio/processors/__pre/AudioPreProcessingAlgorithm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/frame/functionalities/audio/processors/__pre/AudioShufflePresetsPreProcessingAlgorithm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/algorithms/processing_algorithms/audio/processors/__pre/AudioShufflePresetsPreProcessingAlgorithm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/frame/functionalities/audio/processors/__pre/DynamicSensibilityDetectionPreProcessingAlgorithm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/algorithms/processing_algorithms/audio/processors/__pre/DynamicSensibilityDetectionPreProcessingAlgorithm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/frame/functionalities/audio/processors/__pre/RhythmicInterpolationPreProcessingAlgorithm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/algorithms/processing_algorithms/audio/processors/__pre/RhythmicInterpolationPreProcessingAlgorithm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/frame/functionalities/audio/processors/_pro/AudioProcessingAlgorithm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/algorithms/processing_algorithms/audio/processors/_pro/AudioProcessingAlgorithm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/frame/functionalities/audio/processors/_pro/FrequencyPulseAudioProcessingAlgorithm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/algorithms/processing_algorithms/audio/processors/_pro/FrequencyPulseAudioProcessingAlgorithm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/frame/functionalities/audio/processors/_pro/FrequencyWaveAudioProcessingAlgorithm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/algorithms/processing_algorithms/audio/processors/_pro/FrequencyWaveAudioProcessingAlgorithm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/frame/functionalities/audio/processors/post/AudioPostProcessingAlgorithm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/algorithms/processing_algorithms/audio/processors/post/AudioPostProcessingAlgorithm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/frame/functionalities/audio/processors/post/RelaxingPulseAudioPostProcessingAlgorithm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/algorithms/processing_algorithms/audio/processors/post/RelaxingPulseAudioPostProcessingAlgorithm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/frame/functionalities/video/VideoProcessingUnit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/processing_units/units/VideoProcessingUnit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/frame/functionalities/video/processors/__pre/BlueFilterPreProcessingAlgorithm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/algorithms/processing_algorithms/video/processors/__pre/BlueFilterPreProcessingAlgorithm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/frame/functionalities/video/processors/__pre/GrayscaleFilterPreProcessingAlgorithm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/algorithms/processing_algorithms/video/processors/__pre/GrayscaleFilterPreProcessingAlgorithm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/frame/functionalities/video/processors/__pre/GreenFilterPreProcessingAlgorithm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/algorithms/processing_algorithms/video/processors/__pre/GreenFilterPreProcessingAlgorithm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/frame/functionalities/video/processors/__pre/RedFilterPreProcessingAlgorithm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/algorithms/processing_algorithms/video/processors/__pre/RedFilterPreProcessingAlgorithm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/frame/functionalities/video/processors/__pre/VideoPreProcessingAlgorithm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/algorithms/processing_algorithms/video/processors/__pre/VideoPreProcessingAlgorithm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/frame/functionalities/video/processors/_pro/MeanColorProcessingAlgorithm.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/frame/functionalities/video/processors/_pro/UniformPickProcessingAlgorithm.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/frame/functionalities/video/processors/_pro/VideoProcessingAlgorithm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/algorithms/processing_algorithms/video/processors/_pro/VideoProcessingAlgorithm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/frame/functionalities/video/processors/post/BrightnessRegulatorPostProcessingAlgorithm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/algorithms/processing_algorithms/video/processors/post/BrightnessRegulatorPostProcessingAlgorithm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/frame/functionalities/video/processors/post/VideoPostProcessingAlgorithm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/algorithms/processing_algorithms/video/processors/post/VideoPostProcessingAlgorithm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/frame/functionalities/video/processors/post/frame_update/GradientFrameUpdatePostProcessingAlgorithm.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/frame/functionalities/video/processors/post/frame_update/LazyFrameUpdatePostProcessingAlgorithm.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/frame/manager/AmbilightFrameBuilder.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/frame/manager/FrameManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/frame/FrameManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/frame/manager/LedCountComputer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/frame/assembler/LedCountComputer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/frame/manager/pu_array_factory/FrameStyleFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/frame/assembler/pu_array_factory/frame_factories/FrameStyleFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/frame/manager/pu_array_factory/LaptopFrameStyleFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/frame/assembler/pu_array_factory/frame_factories/LaptopFrameStyleFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/frame/manager/pu_array_factory/LaptopStripStyleFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/frame/assembler/pu_array_factory/frame_factories/LaptopStripStyleFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/frame/manager/pu_array_factory/ProcessingUnitsArrayFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/frame/assembler/pu_array_factory/ProcessingUnitsArrayFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/frame/manager/pu_array_factory/SideOnlyStyleFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/frame/assembler/pu_array_factory/frame_factories/SidesOnlyStyleFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/frame/manager/pu_array_factory/StripStyleFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/frame/assembler/pu_array_factory/frame_factories/StripStyleFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/frame/manager/pu_array_factory/StyleFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/frame/assembler/pu_array_factory/frame_factories/StyleFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/frame/utils/algorithm_manager/AlgorithmManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/algorithms/algorithm_manager/AlgorithmManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/frame/utils/algorithm_manager/ambient/AmbientAlgorithmManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/algorithms/algorithm_manager/ambient/AmbientAlgorithmManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/frame/utils/algorithm_manager/ambient/AmbientPostProcessingAlgorithmManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/algorithms/algorithm_manager/ambient/AmbientPostProcessingAlgorithmManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/frame/utils/algorithm_manager/ambient/AmbientPreProcessingAlgorithmManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/algorithms/algorithm_manager/ambient/AmbientPreProcessingAlgorithmManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/frame/utils/algorithm_manager/ambient/AmbientProcessingAlgorithmManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/algorithms/algorithm_manager/ambient/AmbientProcessingAlgorithmManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/frame/utils/algorithm_manager/audio/AudioAlgorithmManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/algorithms/algorithm_manager/audio/AudioAlgorithmManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/frame/utils/algorithm_manager/audio/AudioPostProcessingAlgorithmManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/algorithms/algorithm_manager/audio/AudioPostProcessingAlgorithmManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/frame/utils/algorithm_manager/audio/AudioPreProcessingAlgorithmManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/algorithms/algorithm_manager/audio/AudioPreProcessingAlgorithmManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/frame/utils/algorithm_manager/audio/AudioProcessingAlgorithmManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/algorithms/algorithm_manager/audio/AudioProcessingAlgorithmManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/frame/utils/algorithm_manager/video/VideoAlgorithmManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/algorithms/algorithm_manager/video/VideoAlgorithmManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/frame/utils/algorithm_manager/video/VideoPostProcessingAlgorithmManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/algorithms/algorithm_manager/video/VideoPostProcessingAlgorithmManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/frame/utils/algorithm_manager/video/VideoPreProcessingAlgorithmManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/algorithms/algorithm_manager/video/VideoPreProcessingAlgorithmManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/frame/utils/algorithm_manager/video/VideoProcessingAlgorithmManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/algorithms/algorithm_manager/video/VideoProcessingAlgorithmManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/frame/utils/processing_algorithms/PostProcessingAlgorithm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/algorithms/processing_algorithms/PostProcessingAlgorithm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/frame/utils/processing_algorithms/PreProcessingAlgorithm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/algorithms/processing_algorithms/PreProcessingAlgorithm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/frame/utils/processing_algorithms/ProcessingAlgorithm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/algorithms/processing_algorithms/ProcessingAlgorithm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/frame/utils/processing_units/ProcessingUnit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/processing_units/units/ProcessingUnit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/frame/utils/processing_units/factories/AmbientProcessingUnitFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/processing_units/factories/AmbientProcessingUnitFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/frame/utils/processing_units/factories/AudioProcessingUnitFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/processing_units/factories/AudioProcessingUnitFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/frame/utils/processing_units/factories/ProcessingUnitFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/frame/utils/processing_units/factories/VideoProcessingUnitFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/processing_units/factories/VideoProcessingUnitFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/io/FileManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/io/FileManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/io/serial/SerialCommunicator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/io/serial/SerialCommunicator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/source/ambient/ColorPresetSource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/source/ambient/ColorPresetSource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/source/ambient/TimeSource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/source/ambient/TimeSource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/source/video/ScreenshotTaker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/source/video/ScreenshotTaker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/source/video/VideoSource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/source/video/VideoSource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/ui/MainLayoutController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/ui/MainLayoutController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/ui/alerts/AlertManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/ui/alerts/AlertManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/ui/alerts/confirmations/ConfirmationAlerts.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/ui/alerts/errors/ErrorAlert.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/ui/alerts/errors/ErrorAlerts.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/ui/alerts/errors/InvalidPortError.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/ui/alerts/warnings/WarningAlerts.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/ui/settings/AudioSettingsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/ui/settings/AudioSettingsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/ui/settings/ComponentInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/ui/settings/ComponentInitializer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/ui/settings/GeneralSettingsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/ui/settings/GeneralSettingsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/ui/settings/ambient/AddPresetController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/ui/settings/ambient/AddPresetController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/ui/settings/ambient/AmbientSettingsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/ui/settings/ambient/AmbientSettingsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/ui/settings/ambient/EditPresetController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/ui/settings/ambient/edit/EditPresetController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/ui/settings/ambient/EditPresetCreateGradientController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/ui/settings/ambient/edit/EditPresetCreateGradientController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/ui/settings/ambient/EditPresetIndividualLedController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/ui/settings/ambient/edit/EditPresetIndividualLedController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/workers/AmbientWorker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/workers/AmbientWorker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/workers/AudioWorker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/workers/AudioWorker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/workers/VideoWorker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/workers/VideoWorker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/AmbilightFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/LedFrame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/config/config/AmbientConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/config/config/AmbientConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/config/config/AudioConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/config/config/AudioConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/config/config/GeneralConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/config/config/GeneralConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/config/config/MyConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/config/config/MyConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/config/config/VideoConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/config/config/VideoConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/images/ambient_mode.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/images/ambient_mode.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/images/audio_mode.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/images/audio_mode.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/images/no_mode.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/images/no_mode.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/images/video_mode.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/images/video_mode.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/view/AppTheme.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/AppTheme.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/view/MainLayout.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/MainLayout.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/view/settings/AudioSettingsLayout.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/settings/AudioSettingsLayout.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/view/settings/GeneralSettingsLayout.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/settings/GeneralSettingsLayout.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/view/settings/VideoSettingsLayout.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/settings/VideoSettingsLayout.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/view/settings/static_mode/AddPresetLayout.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/settings/static_mode/AddPresetLayout.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/view/settings/static_mode/EditPresetCreateGradientLayout.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/settings/static_mode/EditPresetCreateGradientLayout.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/view/settings/static_mode/EditPresetIndividualLedsLayout.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/settings/static_mode/EditPresetIndividualLedsLayout.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/view/settings/static_mode/EditPresetLayout.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/settings/static_mode/EditPresetLayout.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/view/settings/static_mode/StaticSettingsLayout.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/settings/static_mode/StaticSettingsLayout.fxml" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/out/" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/Desktop_Ambilight$MainApp.ic" NAME="MainApp Coverage Results" MODIFIED="1556397768370" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>app.MainApp</FILTER>
+    </SUITE>
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="DependenciesAnalyzeManager">
+    <option name="forwardDirection" value="false" />
+    <option name="includeTests" value="true" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="AlertBuilder.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/controller/ui/alerts/AlertBuilder.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="391">
+              <caret line="26" column="20" selection-start-line="26" selection-start-column="20" selection-end-line="26" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AppTheme.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/view/AppTheme.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2040">
+              <caret line="120" column="1" selection-start-line="120" selection-start-column="1" selection-end-line="120" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="StyleFactory.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/controller/frame/assembler/pu_array_factory/frame_factories/StyleFactory.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="323">
+              <caret line="29" column="50" lean-forward="true" selection-start-line="29" selection-start-column="50" selection-end-line="29" selection-end-column="50" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SettingsViewManager.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/controller/ui/SettingsViewManager.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="428">
+              <caret line="80" column="1" lean-forward="true" selection-start-line="12" selection-end-line="80" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DynamicSensibilityDetectionPreProcessingAlgorithm.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/controller/algorithms/processing_algorithms/audio/processors/__pre/DynamicSensibilityDetectionPreProcessingAlgorithm.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="428">
+              <caret line="68" column="1" lean-forward="true" selection-start-line="9" selection-end-line="68" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FrequencyWaveAudioProcessingAlgorithm.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/controller/algorithms/processing_algorithms/audio/processors/_pro/FrequencyWaveAudioProcessingAlgorithm.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="986">
+              <caret line="63" column="5" lean-forward="true" selection-start-line="14" selection-start-column="4" selection-end-line="63" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="VideoWorker.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/controller/workers/VideoWorker.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="15" selection-start-line="15" selection-end-line="84" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AudioWorker.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/controller/workers/AudioWorker.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="29" column="35" selection-start-line="29" selection-start-column="35" selection-end-line="29" selection-end-column="35" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AlertManager.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/controller/ui/alerts/AlertManager.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="16" column="18" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MainApp.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/app/MainApp.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="323">
+              <caret line="35" column="53" selection-start-line="35" selection-start-column="53" selection-end-line="35" selection-end-column="53" />
+              <folding>
+                <element signature="method#createHomeDirectory#0;class#MainApp#0" />
+                <element signature="method#closingProgram#0;class#MainApp#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="Interface" />
+        <option value="Class" />
+        <option value="FxmlFile" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>properties</find>
+      <find>Color</find>
+      <find>awt</find>
+      <find>s</find>
+      <find>r</find>
+      <find>115</find>
+      <find>USE_BRIGHTNESS</find>
+      <find>System.</find>
+      <find>staticFrameColorState</find>
+      <find>spinner</find>
+      <find>Check</find>
+      <find>animationSpeedTextField</find>
+      <find>.properties</find>
+      <find>try (Stream&lt;Path&gt; paths = Files.walk(Paths.get(path)))</find>
+      <find>URL</find>
+      <find>Optional</find>
+      <find>widthLedCount</find>
+      <find>width</find>
+      <find>frameMan</find>
+      <find>System</find>
+      <find>animationSp</find>
+      <find>Led</find>
+      <find>presetNameTextField.getText()</find>
+      <find>AppTheme</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>LED</replace>
+    </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/main/java/controller/algorithms/algorithm_manager/ambient/AmbientAlgorithmManager.java" />
+        <option value="$PROJECT_DIR$/src/main/java/controller/algorithms/algorithm_manager/video/VideoAlgorithmManager.java" />
+        <option value="$PROJECT_DIR$/src/main/java/controller/algorithms/algorithm_manager/ambient/AmbientPostProcessingAlgorithmManager.java" />
+        <option value="$PROJECT_DIR$/src/main/java/controller/algorithms/algorithm_manager/ambient/AmbientPreProcessingAlgorithmManager.java" />
+        <option value="$PROJECT_DIR$/src/main/java/controller/algorithms/algorithm_manager/audio/AudioPostProcessingAlgorithmManager.java" />
+        <option value="$PROJECT_DIR$/src/main/java/controller/algorithms/algorithm_manager/audio/AudioPreProcessingAlgorithmManager.java" />
+        <option value="$PROJECT_DIR$/src/main/java/controller/algorithms/algorithm_manager/audio/AudioProcessingAlgorithmManager.java" />
+        <option value="$PROJECT_DIR$/src/main/java/controller/algorithms/algorithm_manager/video/VideoPostProcessingAlgorithmManager.java" />
+        <option value="$PROJECT_DIR$/src/main/java/controller/algorithms/algorithm_manager/video/VideoPreProcessingAlgorithmManager.java" />
+        <option value="$PROJECT_DIR$/src/main/java/controller/algorithms/algorithm_manager/video/VideoProcessingAlgorithmManager.java" />
+        <option value="$PROJECT_DIR$/src/main/java/controller/algorithms/algorithm_manager/ambient/AmbientProcessingAlgorithmManager.java" />
+        <option value="$PROJECT_DIR$/src/main/java/model/led_frame/FrameBuilder.java" />
+        <option value="$PROJECT_DIR$/src/main/java/controller/frame/assembler/pu_array_factory/frame_factories/StyleFactory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/controller/frame/assembler/pu_array_factory/frame_factories/FrameStyleFactory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/controller/frame/assembler/pu_array_factory/frame_factories/SideOnlyStyleFactory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/controller/frame/assembler/pu_array_factory/frame_factories/SidesOnlyStyleFactory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/controller/source/ambient/TimeSource.java" />
+        <option value="$PROJECT_DIR$/src/main/java/controller/exceptions/InvalidImageSource.java" />
+        <option value="$PROJECT_DIR$/src/main/java/controller/exceptions/MyException.java" />
+        <option value="$PROJECT_DIR$/src/main/java/controller/exceptions/InvalidWidthLedCountFieldException.java" />
+        <option value="$PROJECT_DIR$/src/main/java/controller/ui/alerts/AlertManager.java" />
+        <option value="$PROJECT_DIR$/src/main/java/controller/workers/AmbientWorker.java" />
+        <option value="$PROJECT_DIR$/src/main/java/controller/ui/MainLayoutController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/controller/ui/settings/AudioSettingsController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/controller/ui/settings/GeneralSettingsController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/controller/ui/settings/ComponentInitializer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/controller/ui/settings/ambient/AddPresetController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/controller/algorithms/processing_algorithms/ambient/processors/__pre/AmbientShufflePresetsPreProcessingAlgorithm.java" />
+        <option value="$PROJECT_DIR$/src/main/java/controller/ui/settings/ambient/AmbientSettingsController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/controller/processing_units/units/ProcessingUnit.java" />
+        <option value="$PROJECT_DIR$/src/main/java/controller/algorithms/processing_algorithms/audio/processors/__pre/RhythmicInterpolationPreProcessingAlgorithm.java" />
+        <option value="$PROJECT_DIR$/src/main/java/controller/frame/FrameManager.java" />
+        <option value="$PROJECT_DIR$/src/main/java/controller/frame/assembler/LedFrameBuilder.java" />
+        <option value="$PROJECT_DIR$/src/main/java/controller/frame/assembler/FrameBuilder.java" />
+        <option value="$PROJECT_DIR$/src/main/java/controller/source/video/FfmpegScreenshotTaker.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/controller/io/serial/SerialCommunicator.java" />
+        <option value="$PROJECT_DIR$/src/main/java/controller/io/FileManager.java" />
+        <option value="$PROJECT_DIR$/src/main/java/controller/processing_units/factories/ProcessingUnitFactory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/controller/processing_units/factories/AmbientProcessingUnitFactory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/controller/processing_units/factories/AudioProcessingUnitFactory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/controller/processing_units/factories/VideoProcessingUnitFactory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/controller/algorithms/processing_algorithms/video/processors/__pre/GrayscaleFilterPreProcessingAlgorithm.java" />
+        <option value="$PROJECT_DIR$/src/main/java/controller/algorithms/processing_algorithms/audio/processors/_pro/FrequencyWaveAudioProcessingAlgorithm.java" />
+        <option value="$PROJECT_DIR$/src/main/java/controller/algorithms/processing_algorithms/ambient/processors/_pro/SpinAnimationProcessingAlgorithm.java" />
+        <option value="$PROJECT_DIR$/src/main/java/controller/algorithms/processing_algorithms/audio/processors/__pre/AudioShufflePresetsPreProcessingAlgorithm.java" />
+        <option value="$PROJECT_DIR$/src/main/java/controller/workers/VideoWorker.java" />
+        <option value="$PROJECT_DIR$/src/main/java/controller/workers/AudioWorker.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/view/MainLayout.fxml" />
+        <option value="$PROJECT_DIR$/src/main/java/app/MainApp.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/view/AppTheme.css" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="DesktopAmbilight" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+      </expand>
+      <select />
+    </treeState>
+  </component>
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths />
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1096" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Desktop-Ambilight" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Desktop-Ambilight" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Desktop-Ambilight" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Desktop-Ambilight" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Desktop-Ambilight" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Desktop-Ambilight" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Desktop-Ambilight" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Desktop-Ambilight" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Desktop-Ambilight" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Desktop-Ambilight" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Desktop-Ambilight" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Desktop-Ambilight" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Desktop-Ambilight" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Desktop-Ambilight" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+              <item name="algorithms" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Desktop-Ambilight" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Desktop-Ambilight" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+              <item name="algorithms" type="462c0819:PsiDirectoryNode" />
+              <item name="processing_algorithms" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Desktop-Ambilight" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Desktop-Ambilight" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+              <item name="algorithms" type="462c0819:PsiDirectoryNode" />
+              <item name="processing_algorithms" type="462c0819:PsiDirectoryNode" />
+              <item name="processors" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Desktop-Ambilight" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Desktop-Ambilight" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+              <item name="algorithms" type="462c0819:PsiDirectoryNode" />
+              <item name="processing_algorithms" type="462c0819:PsiDirectoryNode" />
+              <item name="processors" type="462c0819:PsiDirectoryNode" />
+              <item name="__pre" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Desktop-Ambilight" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Desktop-Ambilight" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+              <item name="algorithms" type="462c0819:PsiDirectoryNode" />
+              <item name="processing_algorithms" type="462c0819:PsiDirectoryNode" />
+              <item name="processors" type="462c0819:PsiDirectoryNode" />
+              <item name="_pro" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Desktop-Ambilight" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Desktop-Ambilight" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+              <item name="ui" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Desktop-Ambilight" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Desktop-Ambilight" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+              <item name="ui" type="462c0819:PsiDirectoryNode" />
+              <item name="alerts" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Desktop-Ambilight" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Desktop-Ambilight" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+              <item name="workers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Desktop-Ambilight" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Desktop-Ambilight" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Desktop-Ambilight" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Desktop-Ambilight" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="view" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Desktop-Ambilight" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Desktop-Ambilight" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="view" type="462c0819:PsiDirectoryNode" />
+              <item name="settings" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Desktop-Ambilight" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Desktop-Ambilight" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="view" type="462c0819:PsiDirectoryNode" />
+              <item name="settings" type="462c0819:PsiDirectoryNode" />
+              <item name="static_mode" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Desktop-Ambilight" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Desktop-Ambilight" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Desktop-Ambilight" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Desktop-Ambilight" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+              <item name="classes" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Desktop-Ambilight" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Desktop-Ambilight" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+              <item name="generated-sources" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="AnalyzeApkAction.lastApkPath" value="$PROJECT_DIR$/out/artifacts/DesktopAmbilight_jar" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/out/artifacts/DesktopAmbilight_jar" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2137931" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\FACULTATE\Licenta\Desktop_Ambilight\src\main\java\view" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\FACULTATE\Licenta\Desktop_Ambilight\src\main\resources\properties" />
+      <recent name="D:\FACULTATE\Licenta\Desktop_Ambilight\src\main\resources" />
+      <recent name="D:\FACULTATE\Licenta\Desktop_Ambilight\src\main\resources\images" />
+      <recent name="D:\FACULTATE\Licenta\Desktop_Ambilight\src\main\resources\static_states" />
+      <recent name="D:\FACULTATE\Licenta\Desktop_Ambilight\src\main\java\view\settings\static_mode" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="MainApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="MAIN_CLASS_NAME" value="app.MainApp" />
+      <module name="DesktopAmbilight" />
+      <option name="VM_PARAMETERS" value="-XX:-UseAdaptiveSizePolicy -XX:+UseParallelGC" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="app.MainApp" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <properties />
+      <listeners />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.MainApp" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="61c14127-d0da-4059-972f-a6dd288fde77" name="Default" comment="" />
+      <created>1552645598577</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1552645598577</updated>
+      <workItem from="1552645602929" duration="7655000" />
+      <workItem from="1553018147071" duration="2706000" />
+      <workItem from="1553183903911" duration="3074000" />
+      <workItem from="1553191564483" duration="3615000" />
+      <workItem from="1553260046855" duration="9797000" />
+      <workItem from="1554717857481" duration="10765000" />
+      <workItem from="1554802350864" duration="17497000" />
+      <workItem from="1554975867918" duration="18875000" />
+      <workItem from="1555062103532" duration="15347000" />
+      <workItem from="1555168526490" duration="6661000" />
+      <workItem from="1555413414089" duration="91000" />
+      <workItem from="1555611110525" duration="9825000" />
+      <workItem from="1556027283379" duration="239000" />
+      <workItem from="1556097834096" duration="3858000" />
+      <workItem from="1556110073029" duration="377000" />
+      <workItem from="1556110488174" duration="514000" />
+      <workItem from="1556111089250" duration="14287000" />
+      <workItem from="1556131387821" duration="3400000" />
+      <workItem from="1556221693348" duration="876000" />
+      <workItem from="1556279956983" duration="13544000" />
+      <workItem from="1556367371797" duration="16655000" />
+      <workItem from="1556472343389" duration="58000" />
+      <workItem from="1556472424811" duration="13138000" />
+      <workItem from="1556642682128" duration="19884000" />
+      <workItem from="1556708317184" duration="11034000" />
+      <workItem from="1556824965499" duration="602000" />
+      <workItem from="1556874940725" duration="501000" />
+      <workItem from="1556880602094" duration="1177000" />
+      <workItem from="1556996935870" duration="3329000" />
+      <workItem from="1557076996167" duration="2570000" />
+      <workItem from="1557127268907" duration="74000" />
+      <workItem from="1557143178392" duration="15188000" />
+      <workItem from="1557175214548" duration="2029000" />
+      <workItem from="1557242109173" duration="12771000" />
+      <workItem from="1557600589442" duration="1229000" />
+      <workItem from="1557676406544" duration="973000" />
+      <workItem from="1557737623178" duration="21686000" />
+      <workItem from="1557931488759" duration="2667000" />
+      <workItem from="1557953734494" duration="487000" />
+      <workItem from="1558007879698" duration="6171000" />
+      <workItem from="1558090814092" duration="16541000" />
+      <workItem from="1558202790126" duration="1076000" />
+      <workItem from="1558265496774" duration="1549000" />
+      <workItem from="1558285436885" duration="1262000" />
+      <workItem from="1558343595730" duration="11954000" />
+      <workItem from="1558381292112" duration="5979000" />
+      <workItem from="1558389115054" duration="626000" />
+      <workItem from="1558431522934" duration="18041000" />
+      <workItem from="1558521921960" duration="434000" />
+      <workItem from="1558540236033" duration="8024000" />
+      <workItem from="1558791980837" duration="7456000" />
+      <workItem from="1558804400813" duration="1512000" />
+      <workItem from="1558874681748" duration="18945000" />
+      <workItem from="1558949922778" duration="18447000" />
+      <workItem from="1559053753882" duration="606000" />
+      <workItem from="1559056005088" duration="4599000" />
+      <workItem from="1559067772180" duration="2769000" />
+      <workItem from="1559070787771" duration="1501000" />
+      <workItem from="1559122534202" duration="664000" />
+      <workItem from="1559123223668" duration="3278000" />
+      <workItem from="1559156488910" duration="855000" />
+      <workItem from="1559211842133" duration="1788000" />
+      <workItem from="1559231055526" duration="1920000" />
+      <workItem from="1559483756797" duration="5283000" />
+      <workItem from="1559551129755" duration="21466000" />
+      <workItem from="1559635279579" duration="5534000" />
+      <workItem from="1559723680014" duration="8424000" />
+      <workItem from="1559809905705" duration="19300000" />
+      <workItem from="1559985537332" duration="10080000" />
+      <workItem from="1560237156836" duration="486000" />
+      <workItem from="1560247486851" duration="9683000" />
+      <workItem from="1560362939123" duration="829000" />
+      <workItem from="1560499057960" duration="3431000" />
+      <workItem from="1560681544062" duration="1332000" />
+      <workItem from="1560710151353" duration="1117000" />
+      <workItem from="1560759717685" duration="22846000" />
+      <workItem from="1560846523446" duration="19246000" />
+      <workItem from="1560890310363" duration="1457000" />
+      <workItem from="1560937713608" duration="8191000" />
+      <workItem from="1560955876337" duration="3745000" />
+      <workItem from="1561011202638" duration="818000" />
+      <workItem from="1561033719037" duration="1494000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="549814000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <layout>
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="bottom" id="Event Log" order="16" sideWeight="0.075159915" side_tool="true" weight="0.36056644" />
+      <window_info anchor="right" id="Maven Projects" order="7" weight="0.32995737" />
+      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
+      <window_info id="Capture Tool" order="6" />
+      <window_info id="Designer" order="3" />
+      <window_info anchor="bottom" id="Statistic" order="8" weight="0.32897604" />
+      <window_info anchor="right" id="Database" order="6" weight="0.32995737" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info id="UI Designer" order="4" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.38235295" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32897604" />
+      <window_info anchor="bottom" id="Messages" order="13" weight="0.32897604" />
+      <window_info anchor="right" id="Palette&#9;" order="9" />
+      <window_info id="Image Layers" order="2" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="bottom" id="Version Control" order="12" weight="0.32897604" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.9248401" weight="0.3464481" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.32897604" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.29104477" />
+      <window_info anchor="bottom" id="Run with VisualVM" order="14" weight="0.32897604" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info id="Favorites" order="5" side_tool="true" />
+      <window_info anchor="bottom" id="Debug with VisualVM" order="15" />
+      <window_info anchor="bottom" id="Dependency Viewer" order="10" weight="0.32897604" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="bottom" id="Analyze Dataflow to" order="11" weight="0.32897604" />
+      <window_info anchor="right" id="Module Dependencies" order="8" weight="0.32995737" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="right" id="Coverage" order="10" side_tool="true" weight="0.32995737" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32897604" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Code refactoring" />
+    <option name="LAST_COMMIT_MESSAGE" value="Code refactoring" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/controller/ui/settings/ambient/edit/EditPresetController.java</url>
+          <line>129</line>
+          <properties />
+          <option name="timeStamp" value="34" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/controller/workers/AudioWorker.java</url>
+          <line>134</line>
+          <properties />
+          <option name="timeStamp" value="39" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/controller/workers/VideoWorker.java</url>
+          <line>31</line>
+          <properties />
+          <option name="timeStamp" value="42" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/controller/io/serial/SerialCommunicator.java</url>
+          <line>67</line>
+          <properties />
+          <option name="timeStamp" value="43" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/controller/ui/settings/ambient/edit/EditPresetCreateGradientController.java</url>
+          <line>71</line>
+          <properties />
+          <option name="timeStamp" value="59" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/controller/ui/SettingsViewManager.java</url>
+          <line>69</line>
+          <properties />
+          <option name="timeStamp" value="64" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/controller/ui/settings/ambient/edit/EditPresetCreateGradientController.java</url>
+          <line>84</line>
+          <properties />
+          <option name="timeStamp" value="65" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/controller/ui/settings/ambient/edit/EditPresetIndividualLedController.java</url>
+          <line>236</line>
+          <properties />
+          <option name="timeStamp" value="66" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/controller/ui/settings/ambient/edit/EditPresetIndividualLedController.java</url>
+          <line>44</line>
+          <properties />
+          <option name="timeStamp" value="67" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/controller/ui/settings/ambient/edit/EditPresetController.java</url>
+          <line>189</line>
+          <properties />
+          <option name="timeStamp" value="70" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/controller/ui/settings/ambient/AmbientSettingsController.java</url>
+          <line>267</line>
+          <properties />
+          <option name="timeStamp" value="71" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/controller/ui/settings/ambient/AmbientSettingsController.java</url>
+          <line>183</line>
+          <properties />
+          <option name="timeStamp" value="74" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/controller/algorithms/processing_algorithms/ambient/processors/_pro/InterpolateAnimationProcessingAlgorithm.java</url>
+          <line>22</line>
+          <properties />
+          <option name="timeStamp" value="87" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/controller/algorithms/processing_algorithms/audio/processors/__pre/RhythmicInterpolationPreProcessingAlgorithm.java</url>
+          <line>82</line>
+          <properties />
+          <option name="timeStamp" value="96" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/controller/algorithms/processing_algorithms/audio/processors/__pre/RhythmicInterpolationPreProcessingAlgorithm.java</url>
+          <line>88</line>
+          <properties />
+          <option name="timeStamp" value="97" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/controller/ui/settings/ambient/AmbientSettingsController.java</url>
+          <line>249</line>
+          <properties />
+          <option name="timeStamp" value="103" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/controller/ui/settings/GeneralSettingsController.java</url>
+          <line>173</line>
+          <properties />
+          <option name="timeStamp" value="108" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/controller/algorithms/processing_algorithms/ambient/processors/__pre/AmbientShufflePresetsPreProcessingAlgorithm.java</url>
+          <line>24</line>
+          <properties />
+          <option name="timeStamp" value="111" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/controller/ui/settings/AudioSettingsController.java</url>
+          <line>64</line>
+          <properties />
+          <option name="timeStamp" value="114" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/MainApp.java</url>
+          <line>75</line>
+          <properties />
+          <option name="timeStamp" value="115" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="116" />
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="Application">
+        <watch expression="unitHeight" />
+        <watch expression="imageChunk" />
+        <watch expression="processingUnit" />
+        <watch expression="vpuPrototype" />
+        <watch expression="((StaticSettingsIndividualLedController)this).staticFrameColorState" custom="controller.ui.settings.static_mode.StaticSettingsIndividualLedController" />
+        <watch expression="startLed" />
+        <watch expression="endColor" />
+        <watch expression="associatedLedIndex" language="JAVA" />
+        <watch expression="associatedLedIndex" language="JAVA" />
+        <watch expression="pixelColor" />
+        <watch expression="staticFrameColorState" />
+        <watch expression="customController" />
+        <watch expression="elapsedTime % animationTime" />
+        <watch expression="SourceManager.getColorPresetSource().getSource().getIndividualColors()" />
+        <watch expression="colorStates" />
+        <watch expression="ConfigManager.getAmbientConfig().getFramePresetName())" />
+        <watch expression="ConfigManager.getAmbientConfig().getFramePresetName()" />
+        <watch expression="presetChoiceBox.getItems()" />
+        <watch expression="SourceManager.getColorPresetSource().getNextState()" />
+        <watch expression="SourceManager&#10;                                .getColorPresetSource()&#10;                                .getSource()" />
+      </configuration>
+    </watches-manager>
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="watch">
+      <expression>
+        <expression-string>associatedLedIndex</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
+    <expressions id="evaluateExpression">
+      <expression>
+        <expression-string>red</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/java/controller/algorithms/processing_algorithms/PostProcessingAlgorithm.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controller/algorithms/processing_algorithms/audio/processors/post/RelaxingPulseAudioPostProcessingAlgorithm.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="23" column="71" selection-start-line="23" selection-start-column="71" selection-end-line="23" selection-end-column="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controller/algorithms/algorithm_manager/ambient/AmbientAlgorithmManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controller/algorithms/algorithm_manager/ambient/AmbientProcessingAlgorithmManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controller/algorithms/processing_algorithms/ambient/processors/_pro/FadeAnimationProcessingAlgorithm.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="343">
+          <caret line="27" column="35" lean-forward="true" selection-start-line="27" selection-start-column="35" selection-end-line="27" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controller/algorithms/processing_algorithms/ambient/processors/_pro/SpinAnimationProcessingAlgorithm.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="33" column="41" lean-forward="true" selection-start-line="33" selection-start-column="41" selection-end-line="33" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controller/algorithms/processing_algorithms/ambient/processors/__pre/AmbientShufflePresetsPreProcessingAlgorithm.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controller/algorithms/processing_algorithms/ambient/processors/_pro/InterpolateAnimationProcessingAlgorithm.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controller/algorithms/processing_algorithms/audio/processors/__pre/RhythmicInterpolationPreProcessingAlgorithm.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controller/algorithms/processing_algorithms/audio/processors/__pre/AudioShufflePresetsPreProcessingAlgorithm.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-25">
+          <caret line="37" column="34" selection-start-line="37" selection-start-column="34" selection-end-line="37" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controller/io/FileManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-399">
+          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controller/io/JsonParser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controller/source/SourceManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="629">
+          <caret line="40" column="28" lean-forward="true" selection-start-line="40" selection-start-column="28" selection-end-line="40" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controller/processing_units/units/AudioProcessingUnit.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-136">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controller/processing_units/units/AmbientProcessingUnit.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="287">
+          <caret line="39" column="36" selection-start-line="39" selection-start-column="36" selection-end-line="39" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controller/processing_units/units/VideoProcessingUnit.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-442">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controller/source/video/VideoSource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://A:/Program Files/Java/jdk1.8.0_181/src.zip!/java/lang/Runnable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="236">
+          <caret line="55" column="17" selection-start-line="55" selection-start-column="17" selection-end-line="55" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controller/source/video/ScreenshotTaker.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="5" lean-forward="true" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controller/source/audio/AudioSource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controller/source/ambient/ColorPresetSource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="145">
+          <caret line="29" column="11" lean-forward="true" selection-start-line="29" selection-start-column="11" selection-end-line="29" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controller/source/ambient/TimeSource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controller/workers/MainWorker.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-34">
+          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controller/frame/FrameManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controller/workers/AmbientWorker.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="32" column="23" selection-start-line="32" selection-start-column="23" selection-end-line="32" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/view/settings/static_mode/AddPresetLayout.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/view/settings/static_mode/EditPresetCreateGradientLayout.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="385">
+          <caret line="25" column="19" lean-forward="true" selection-start-line="25" selection-start-column="19" selection-end-line="25" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controller/ui/MainLayoutController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="22" column="35" selection-start-line="22" selection-start-column="35" selection-end-line="22" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controller/ui/settings/ambient/AmbientSettingsController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="222">
+          <caret line="63" column="45" selection-start-line="63" selection-start-column="45" selection-end-line="63" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controller/ui/settings/ComponentInitializer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controller/ui/settings/SettingsController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controller/ui/settings/GeneralSettingsController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1102">
+          <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controller/ui/settings/VideoSettingsController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-833">
+          <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controller/ui/settings/ambient/AddPresetController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controller/ui/settings/ambient/edit/EditPresetCreateGradientController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controller/ui/settings/AudioSettingsController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="41" column="9" selection-start-line="41" selection-start-column="9" selection-end-line="41" selection-end-column="9" />
+          <folding>
+            <element signature="method#loadPresets#0;class#AudioSettingsController#0" />
+            <element signature="method#addPreset#0;class#AudioSettingsController#0" />
+            <element signature="method#initializeBasicSettings#0;class#AudioSettingsController#0" />
+            <element signature="method#initializeAdvancedSettings#0;class#AudioSettingsController#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controller/ui/settings/ambient/edit/EditPresetIndividualLedController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="47" selection-start-line="47" selection-end-line="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/view/settings/static_mode/EditPresetIndividualLedsLayout.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/view/MainLayout.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="181" selection-start-line="8" selection-start-column="181" selection-end-line="8" selection-end-column="181" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/view/settings/VideoSettingsLayout.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/view/settings/GeneralSettingsLayout.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controller/ui/alerts/AlertBuilder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="26" column="20" selection-start-line="26" selection-start-column="20" selection-end-line="26" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controller/ui/alerts/AlertManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="16" column="18" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/app/MainApp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="35" column="53" selection-start-line="35" selection-start-column="53" selection-end-line="35" selection-end-column="53" />
+          <folding>
+            <element signature="method#createHomeDirectory#0;class#MainApp#0" />
+            <element signature="method#closingProgram#0;class#MainApp#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/view/AppTheme.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2040">
+          <caret line="120" column="1" selection-start-line="120" selection-start-column="1" selection-end-line="120" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controller/frame/assembler/pu_array_factory/frame_factories/StyleFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="29" column="50" lean-forward="true" selection-start-line="29" selection-start-column="50" selection-end-line="29" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controller/ui/SettingsViewManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="428">
+          <caret line="80" column="1" lean-forward="true" selection-start-line="12" selection-end-line="80" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controller/algorithms/processing_algorithms/audio/processors/__pre/DynamicSensibilityDetectionPreProcessingAlgorithm.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="428">
+          <caret line="68" column="1" lean-forward="true" selection-start-line="9" selection-end-line="68" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controller/algorithms/processing_algorithms/audio/processors/_pro/FrequencyWaveAudioProcessingAlgorithm.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="986">
+          <caret line="63" column="5" lean-forward="true" selection-start-line="14" selection-start-column="4" selection-end-line="63" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controller/workers/VideoWorker.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" selection-start-line="15" selection-end-line="84" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controller/workers/AudioWorker.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="29" column="35" selection-start-line="29" selection-start-column="35" selection-end-line="29" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <last-edited>DesktopAmbilight:jar</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2137931" />
+                <option value="0.5" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>DesktopAmbilight</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2137931" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: com.github.axet:TarsosDSP:2.4-1</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

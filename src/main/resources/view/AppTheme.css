@@ -1,0 +1,132 @@
+* {
+    -fx-color1: #E0FBFC;
+    -fx-color2: #C2DFe3;
+    -fx-color3: #031927;
+    -fx-color4: #5C6B73;
+}
+
+.background {
+    -fx-background-color: -fx-color1;
+}
+
+.label {
+    -fx-font-size: 12pt;
+    -fx-font-family: "Segoe UI Semibold";
+    -fx-text-fill: -fx-color3;
+    -fx-opacity: 0.9;
+}
+
+.label-bright {
+    -fx-font-size: 14pt;
+    -fx-font-family: "Segoe UI Semibold";
+    -fx-text-fill: -fx-color3;
+    -fx-opacity: 1;
+}
+
+.label-header {
+    -fx-font-size: 32pt;
+    -fx-font-family: "Segoe UI";
+    -fx-text-fill: -fx-color3;
+    -fx-opacity: 1;
+}
+
+.menu-bar {
+    -fx-background-color: -fx-color1;
+}
+
+.context-menu {
+    -fx-background-color: derive(-fx-color1, 50%);
+}
+
+.menu-item:hover, .menu-item:focused {
+    -fx-background-color: -fx-color4;
+    -fx-text-fill: -fx-color2;
+}
+
+.menu .left-container {
+    -fx-background-color: -fx-color3;
+}
+
+.text-field {
+    -fx-font-size: 12pt;
+    -fx-font-family: "Segoe UI Semibold";
+}
+
+.button {
+    -fx-border-color: -fx-color4;
+    -fx-border-width: 2;
+    -fx-background-radius: 0;
+    -fx-background-color: -fx-color2;
+    -fx-font-family: "Segoe UI Semibold", Helvetica, Arial, sans-serif;
+    -fx-font-size: 11pt;
+    -fx-text-fill: -fx-color3;
+    -fx-background-insets: 0 0 0 0, 0, 1, 2;
+    -fx-pref-height: 40px;
+}
+
+.choice-box {
+    -fx-border-color: -fx-color4;
+    -fx-border-width: 2;
+    -fx-background-radius: 0;
+    -fx-background-color: -fx-color2;
+    -fx-font-family: "Segoe UI Semibold", Helvetica, Arial, sans-serif;
+    -fx-font-size: 11pt;
+    -fx-text-fill: -fx-color3;
+    -fx-background-insets: 0 0 0 0, 0, 1, 2;
+}
+
+.button:hover {
+    -fx-background-color: derive(-fx-color2, -25%);
+    -fx-border-color: derive(-fx-color4, -25%);
+}
+
+.button:pressed, .button:default:hover:pressed {
+    -fx-background-color: -fx-color4;
+}
+
+.button:disabled, .button:default:disabled {
+    -fx-opacity: 0.4;
+}
+
+.tooltip {
+    -fx-background-color: -fx-color1;
+    -fx-text-fill: -fx-color3;
+    -fx-font-family: "Segoe UI Semibold", Helvetica, Arial, sans-serif;
+    -fx-font-size: 10pt;
+}
+
+.text-field {
+    -fx-background-color: derive(-fx-color2, 25%);
+    -fx-text-fill: -fx-color3;
+}
+
+.slider{
+    -fx-progress-color: -fx-color3;
+    -fx-color-label-visible: -fx-color3;
+}
+
+.tab-pane .tab:selected {
+    -fx-background-color: #C2DFe3;
+    -fx-font-weight: bold;
+}
+
+.tab-pane .tab-header-area .tab-header-background {
+    -fx-opacity: 0;
+}
+
+.tab .tab-label{
+    -fx-alignment: CENTER;
+    -fx-text-fill: #031927;
+    -fx-font-size: 12px;
+}
+
+.check-box {
+    -fx-font-size: 12pt;
+    -fx-font-family: "Segoe UI Semibold";
+    -fx-text-fill: -fx-color3;
+    -fx-opacity: 0.9;
+}
+
+.check-box:disabled {
+    -fx-opacity: 0.5;
+}

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="400.0" styleClass="background" stylesheets="@AppTheme.css" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ui.MainLayoutController">
+   <children>
+      <ImageView fx:id="imageView" fitHeight="200.0" fitWidth="200.0" layoutX="200.0" layoutY="50.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="200.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <MenuButton layoutX="27.0" layoutY="41.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="105.0" styleClass="button" stylesheets="@AppTheme.css" text="Mode" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="40.0">
+        <items>
+          <MenuItem mnemonicParsing="false" onAction="#setVideoMode" text="Video" />
+          <MenuItem mnemonicParsing="false" onAction="#setAudioMode" text="Audio" />
+            <MenuItem mnemonicParsing="false" onAction="#setStaticMode" text="Ambient" />
+            <MenuItem mnemonicParsing="false" onAction="#setNoMode" text="None" />
+        </items>
+         <tooltip>
+            <Tooltip text="Change frame mode" />
+         </tooltip>
+      </MenuButton>
+      <MenuButton layoutX="27.0" layoutY="116.0" mnemonicParsing="false" styleClass="button" text="Settings" AnchorPane.bottomAnchor="40.0" AnchorPane.leftAnchor="20.0">
+        <items>
+          <MenuItem mnemonicParsing="false" onAction="#openGeneralSettings" text="General" />
+          <MenuItem mnemonicParsing="false" onAction="#openVideoSettings" text="Video Settings" />
+            <MenuItem mnemonicParsing="false" onAction="#openAudioSettings" text="Audio Settings" />
+            <MenuItem mnemonicParsing="false" onAction="#openAmbientModeSettings" text="Ambient Settings" />
+        </items>
+      </MenuButton>
+   </children>
+</AnchorPane>

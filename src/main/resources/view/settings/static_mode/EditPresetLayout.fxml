@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.ColorPicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<AnchorPane prefHeight="450.0" prefWidth="460.0" styleClass="background" stylesheets="@../../AppTheme.css" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ui.settings.ambient.edit.EditPresetController">
+   <children>
+      <GridPane layoutX="14.0" layoutY="19.0" prefHeight="351.0" prefWidth="360.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="20.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="246.0" minWidth="10.0" prefWidth="186.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="198.0" minWidth="0.0" prefWidth="174.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <Label text="All LEDs Color" />
+            <Label text="Top Segment Color" GridPane.rowIndex="1" />
+            <Label text="Left Segment Color" GridPane.rowIndex="2" />
+            <Label text="Right Segment Color" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Label text="Bottom Segment Color" GridPane.rowIndex="4" />
+            <Label text="Change Individual LEDs Color" GridPane.rowIndex="5" />
+            <Label text="Create Segment Gradient" GridPane.rowIndex="6" />
+            <ColorPicker fx:id="allLedsColorPicker" prefHeight="25.0" prefWidth="207.0" styleClass="button" GridPane.columnIndex="1" />
+            <ColorPicker fx:id="topSegmentColorPicker" prefHeight="25.0" prefWidth="200.0" styleClass="button" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <ColorPicker fx:id="rightSegmentColorPicker" prefHeight="40.0" prefWidth="150.0" styleClass="button" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <ColorPicker fx:id="bottomSegmentColorPicker" prefHeight="25.0" prefWidth="287.0" styleClass="button" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <Button mnemonicParsing="false" onAction="#loadIndividualLedController" prefHeight="25.0" prefWidth="240.0" text="Change..." GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <Button mnemonicParsing="false" onAction="#loadCreateGradientController" prefHeight="25.0" prefWidth="335.0" text="Create..." GridPane.columnIndex="1" GridPane.rowIndex="6" />
+            <ColorPicker fx:id="leftSegmentColorPicker" prefHeight="25.0" prefWidth="150.0" styleClass="button" GridPane.rowIndex="3" />
+         </children>
+      </GridPane>
+      <ButtonBar layoutX="20.0" layoutY="419.0" prefHeight="40.0" prefWidth="341.0" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="39.0">
+         <buttons>
+            <Button mnemonicParsing="false" onAction="#handleOk" prefHeight="25.0" prefWidth="153.0" text="Ok" />
+            <Button layoutX="135.0" layoutY="18.0" mnemonicParsing="false" onAction="#handleCancel" prefHeight="25.0" text="Cancel" />
+            <Button layoutX="135.0" layoutY="18.0" mnemonicParsing="false" onAction="#handleApply" prefHeight="25.0" text="Apply" />
+         </buttons>
+      </ButtonBar>
+   </children>
+</AnchorPane>

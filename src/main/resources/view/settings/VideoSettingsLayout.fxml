@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.shape.Line?>
+
+<AnchorPane prefHeight="500.0" prefWidth="400.0" styleClass="background" stylesheets="@../AppTheme.css" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ui.settings.VideoSettingsController">
+   <children>
+      <TabPane prefHeight="500.0" prefWidth="400.0" tabClosingPolicy="UNAVAILABLE">
+         <tabs>
+            <Tab text="General Settings">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="254.0" prefWidth="313.0">
+                     <children>
+                        <GridPane prefHeight="233.0" prefWidth="360.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="20.0">
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints minHeight="10.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                           <children>
+                              <Label text="Display" />
+                              <Label text="Updates per Second" GridPane.rowIndex="1" />
+                              <Label text="Brightness" GridPane.rowIndex="3" />
+                              <ChoiceBox fx:id="displayChoiceBox" prefHeight="44.0" prefWidth="180.0" styleClass="button" GridPane.columnIndex="1">
+                                 <tooltip>
+                                    <Tooltip text="Specify the screen that will be processed." />
+                                 </tooltip></ChoiceBox>
+                              <ChoiceBox fx:id="updateRateChoiceBox" prefHeight="25.0" prefWidth="191.0" styleClass="button" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                 <tooltip>
+                                    <Tooltip text="Specify how many times per second the LEDs will be updated. Higher means better fidelity, lower will improve performance." />
+                                 </tooltip></ChoiceBox>
+                              <Slider fx:id="brightnessSlider" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                                 <tooltip>
+                                    <Tooltip text="Specify the brightness factor. 0 means total darkness, 1 is full brightness, 0.5 is the base color." />
+                                 </tooltip></Slider>
+                              <CheckBox fx:id="useBrightnessCheckBox" mnemonicParsing="false" styleClass="label" text="Use Brightness" GridPane.rowIndex="2">
+                                 <tooltip>
+                                    <Tooltip text="If checked, the final LED color will be processed to be brighter or darker based on the slider below." />
+                                 </tooltip></CheckBox>
+                           </children>
+                        </GridPane>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab text="Processing Settings">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <GridPane prefHeight="383.0" prefWidth="360.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="20.0">
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints minHeight="10.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                           <children>
+                              <Label text="Update Style" GridPane.rowIndex="5" />
+                              <Label text="Lazy Confort Range" GridPane.rowIndex="6" />
+                              <ChoiceBox fx:id="videoFrameUpdateStyleChoiceBox" prefHeight="25.0" prefWidth="274.0" styleClass="button" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                              <Slider fx:id="lazyComfortRangeSlider" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                              <Label text="Smooth Factor" GridPane.rowIndex="7" />
+                              <Slider fx:id="smoothFactorSlider" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+                              <Label text="Processing Type" GridPane.rowIndex="2" />
+                              <Label text="Screen Depth" GridPane.rowIndex="3" />
+                              <ChoiceBox fx:id="videoProcessingTypeChoiceBox" prefHeight="25.0" prefWidth="185.0" styleClass="button" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                              <ChoiceBox fx:id="videoProcessingDepthChoiceBox" prefHeight="25.0" prefWidth="290.0" styleClass="button" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                              <Label text="Image Filter" />
+                              <ChoiceBox fx:id="imageFilterChoiceBox" prefHeight="25.0" prefWidth="262.0" styleClass="button" GridPane.columnIndex="1" />
+                              <Line endX="259.5" startX="-100.0" GridPane.rowIndex="1" />
+                              <Line endX="259.5" startX="-100.0" GridPane.rowIndex="4" />
+                           </children>
+                        </GridPane>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+         </tabs>
+         <styleClass>
+            <String fx:value="background" />
+            <String fx:value="tab-pane" />
+         </styleClass>
+      </TabPane>
+      <ButtonBar layoutX="20.0" layoutY="419.0" prefHeight="40.0" prefWidth="341.0" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="39.0">
+         <buttons>
+            <Button mnemonicParsing="false" onAction="#handleOk" prefHeight="25.0" prefWidth="153.0" text="Ok" />
+            <Button layoutX="135.0" layoutY="18.0" mnemonicParsing="false" onAction="#handleCancel" prefHeight="25.0" text="Cancel" />
+            <Button layoutX="135.0" layoutY="18.0" mnemonicParsing="false" onAction="#handleApply" prefHeight="25.0" text="Apply" />
+         </buttons>
+      </ButtonBar>
+   </children>
+</AnchorPane>
