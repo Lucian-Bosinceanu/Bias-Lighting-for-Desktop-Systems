@@ -30,6 +30,9 @@ public class AudioWorker implements Worker {
     private static final int sampleRate = 44100;
     private static final int bufferSize = 1024;
     private AudioDispatcher audioDispatcher;
+    private FFT fft;
+    private float[] audioData;
+    private double intensity;
 
     @Override
     public void stop() {
@@ -53,21 +56,22 @@ public class AudioWorker implements Worker {
             SourceManager.getColorPresetSource().loadAllPresets();
             loadPresets();
             setIndividualLedColor();
+            fft = new FFT(bufferSize);
 
             audioDispatcher.addAudioProcessor(new AudioProcessor() {
                 @Override
                 public boolean process(AudioEvent audioEvent) {
-                    float[] audioData = audioEvent.getFloatBuffer();
-                    FFT fft = new FFT(bufferSize);
+                    audioData = audioEvent.getFloatBuffer();
                     fft.forwardTransform(audioData);
-                    double intensity = 0;
+                    intensity = 0;
 
-                    for (int i = 0; i < bufferSize/2; i++) {
+                    for (int i = 0; i < bufferSize / 2; i++) {
                         if (audioData[i] > intensity) {
                             intensity = audioData[i];
                         }
                     }
 
+                    //System.out.println(intensity);
                     SourceManager.getAudioSource().update(intensity);
                     try {
                         SourceManager.getTimeSource().update(System.currentTimeMillis());

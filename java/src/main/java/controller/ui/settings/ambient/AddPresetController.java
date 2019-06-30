@@ -39,7 +39,7 @@ public class AddPresetController implements SettingsController {
     @Override
     public void handleOk() {
         if (isValidInput()) {
-            if (isUniqueOrRewritten()) {
+            if (isUniqueOrRewritable()) {
                 okClicked = true;
                 addNewPreset();
                 dialogStage.close();
@@ -47,7 +47,7 @@ public class AddPresetController implements SettingsController {
         }
     }
 
-    private boolean isUniqueOrRewritten() {
+    private boolean isUniqueOrRewritable() {
         String path = FileManager.getPresetPath();
         boolean isUniquePresetName = true;
         boolean isEditablePreset = true;
@@ -90,7 +90,7 @@ public class AddPresetController implements SettingsController {
 
         }
 
-        return false;
+        return true;
     }
 
     private boolean fileExist(Path path) {

@@ -17,6 +17,7 @@ import model.FrameColorPreset;
 import model.config.ConfigManager;
 import model.config.config.AudioConfig;
 import model.config.enums.audio.AudioProcessingType;
+import model.config.enums.general.FrameMode;
 
 import java.io.File;
 import java.io.IOException;
@@ -213,6 +214,7 @@ public class AudioSettingsController extends ComponentInitializer implements Set
     }
 
     private void saveSettingsToConfigManager() {
+        ConfigManager.getGlobalConfig().setFrameMode(FrameMode.AUDIO);
         AudioConfig audioConfig = ConfigManager.getAudioConfig();
         audioConfig.setProcessingType(audioProcessingTypeChoiceBox.getValue());
         audioConfig.setBasePreset(basePresetChoiceBox.getValue().getName() + ".json");

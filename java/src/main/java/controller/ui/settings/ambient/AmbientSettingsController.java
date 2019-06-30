@@ -267,6 +267,7 @@ public class AmbientSettingsController extends ComponentInitializer implements S
         if (option.get() == ButtonType.OK) {
             FrameColorPreset stateToBeDeleted = presetChoiceBox.getValue();
             presetChoiceBox.getItems().remove(stateToBeDeleted);
+
             try {
                 isSuccessfulDelete = stateToBeDeleted.deleteColorState();
             } catch (IOException e) {
@@ -280,8 +281,14 @@ public class AmbientSettingsController extends ComponentInitializer implements S
                         .setHeader("Could not delete the preset named " + presetChoiceBox.getValue().getName() + "!")
                         .setOwner(dialogStage)
                         .build();
+                presetChoiceBox.getItems().add(stateToBeDeleted);
                 couldNotDeleteAlert.showAndWait();
             } else {
+                interpolationPresetChoiceBox.getItems().remove(stateToBeDeleted);
+                if (interpolationPresetChoiceBox.getValue().equals(stateToBeDeleted)) {
+                    interpolationPresetChoiceBox.setValue(interpolationPresetChoiceBox.getItems().get(0));
+                }
+
                 presetChoiceBox.setValue(presetChoiceBox.getItems().get(0));
             }
         }

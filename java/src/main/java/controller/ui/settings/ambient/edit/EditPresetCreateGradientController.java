@@ -92,7 +92,7 @@ public class EditPresetCreateGradientController implements SettingsController {
         Color endColor = endColorPicker.getValue();
 
         int startIndex = !isReversed ? 0 : processingUnits.size() - 1;
-        int endIndex = !isReversed ? processingUnits.size() : 0;
+        int endIndex = !isReversed ? processingUnits.size() -1 : 0;
         int step = !isReversed ? 1 : -1;
 
         double deltaRed;
